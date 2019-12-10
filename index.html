@@ -18,13 +18,29 @@
     </script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
         function App() {
-            console.log('success');
+            return (
+                <section>
+                    <h2>Education</h2>
+                    <p>Google (August 2013 - Present) | VP of Development | Leading up Google's dev team.</p>
+                    <p>Facebook (July 2009-August 2013) | Web Developer | Developed Facebook.</p>
+                    <address>
+                        <img src ="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt ="Sally"></img>
+                        <h2>Sally Student</h2>
+                        <p><a href="sallystudent@email.com">sallystudent@email.com</a></p>
+                        <p>2742 West 23433 North Bahamas, US</p>
+                        <p>382-773-2733</p>
+                    </address>
+                </section>
+            );
         }
+
+        // Nested elements inside the App
         ReactDOM.render(
-            <App />,
+            <App></App>,
             document.querySelector('#resume')
         );
     </script>
